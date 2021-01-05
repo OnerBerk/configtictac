@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+$primary-btnColor: #252525;
+$textFont: 'Gilda Display', 'Cambria', 'Cochin', 'Bangers', cursive;
+$big-screen-phone: 600px;
+$minimise-screen: 1175px;
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  color: floralwhite;
+}
+
+.button:hover {
+  font-family: $textFont;
+}
+
+.button:active, .button:active, .button:focus {
+  font-size: larger;
+}
+
+
+@media (max-width: $big-screen-phone) {
+  .button {
+    width: 4.5em;
+    height: 4.5em;
+  }
+}

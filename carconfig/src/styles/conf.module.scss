@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+$minimise-screen: 670px;
+$big-screen-phone: 600px;
+.conf {
+  width: 98%;
+  height: 10vh;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 100%;
+  grid-template-rows: 65% 35%;
+}
+
+.main {
+  width: 98%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  grid-row-start:1 ;
+}
+
+.main, p {
+  color: floralwhite;
+  font-size: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main, p:hover {
+  color: rgb(55, 91, 133);
+  font-weight: bolder;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.colorRed:hover {
+  color: rgb(212, 10, 10);
+}
+
+.colorBlack:hover {
+  color: rgb(53, 52, 52)
+}
+
+.colorBlue:hover {
+  color: rgb(25, 76, 172)
+}
+.colorGreen:hover {
+  color: rgb(76, 209, 116);
+}
+
+
+.colorRed, .colorBlack, .colorGreen, .colorBlue{
+  margin-left: 0;
+  margin-right: 0;
+  width: 4em;
+  height: 2em;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: $minimise-screen) {
+  .main p {
+    font-size: smaller;
+  }
+  .colorRed, .colorBlack, .colorGreen,.colorBlue {
+    font-size: smaller;
+  }
+}
+
+

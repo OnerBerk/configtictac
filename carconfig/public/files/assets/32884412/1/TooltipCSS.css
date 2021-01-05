@@ -1,0 +1,51 @@
+
+.container {
+    position: absolute;
+    top: 160px;
+    left: 16px;
+    border-radius: 20px;
+    
+    background-color: #000;
+   
+    font-weight: 100;
+    padding: 20px;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    
+    visibility:hidden;
+}
+
+.animated {
+            -webkit-animation-duration: 1s;animation-duration: 1s;
+            -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+         
+ @-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+ }
+
+ @keyframes fadeOut {
+    0% {opacity: 1; visibility:visible;}
+    100% {opacity: 0; visibility:hidden;}
+ }
+         
+ .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+ }
+
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ @keyframes fadeIn {
+    0% {opacity: 0; visibility:hidden;}
+    100% {opacity: 1;visibility:visible;}
+ }
+         
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
